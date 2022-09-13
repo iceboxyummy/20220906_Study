@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-//bmi °è»ê±â
+//bmi ê³„ì‚°ê¸°
 
 int main() {
 	
 	float kg, m, bmi;
 
-	printf("¸ö¹«°Ô(kg)¸¦ ÀÔ·ÂÇÏ¼¼¿ä.\n");
+	printf("ëª¸ë¬´ê²Œ(kg)ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.\n");
 	scanf_s("%f", &kg);
 
-	printf("Å°(m)¸¦ ÀÔ·ÂÇÏ¼¼¿ä.\n");
+	printf("í‚¤(m)ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.\n");
 	scanf_s("%f", &m);
 
 	bmi = kg /(m * m);
 
-	printf("bmi´Â %.2f ÀÔ´Ï´Ù.\n", bmi);
+	printf("bmiëŠ” %.2f ìž…ë‹ˆë‹¤.\n", bmi);
 
-	return 0;
+	return 0; 
 }
