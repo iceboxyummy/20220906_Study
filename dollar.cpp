@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-//È¯À²°è»ê±â
+//í™˜ìœ¨ê³„ì‚°ê¸°
 
 int main() {
 
 	float won, dollar;
 
-	printf("¿øÈ­¸¦ ÀÔ·ÂÇÏ¼¼¿ä.\n");
+	printf("ì›í™”ë¥¼ ì…ë ¥í•˜ì„¸ìš”.\n");
 	scanf_s("%f", &won);
 
 	dollar = won * 0.00072;
-	printf("%.1f¿øÀº %.3f´Ş·¯ÀÔ´Ï´Ù.\n", won, dollar);
+	printf("%.1fì›ì€ %.3fë‹¬ëŸ¬ì…ë‹ˆë‹¤.\n", won, dollar);
 
-	return 0;
+	return 0; 
 }
