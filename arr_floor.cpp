@@ -1,4 +1,4 @@
-// °úÁ¦ floor ¿Ï¼º
+// ê³¼ì œ floor ì™„ì„±
 #include <stdio.h>
 
 void floor();
@@ -9,42 +9,42 @@ int main() {
 }
 void floor() {
 	int floor[4][3] = { 0 };
-	int floor_people = 0; // °¢ ÃşÀÇ ÀÎ¿ø¼ö
-	int total_people = 0; // ÀüÃ¼ ÀÎ¿ø¼ö
+	int floor_people = 0; // ê° ì¸µì˜ ì¸ì›ìˆ˜
+	int total_people = 0; // ì „ì²´ ì¸ì›ìˆ˜
 
-	for (int i = 0; i < 4; i++) // ÀÎ¿ø¼ö ÀÔ·Â
+	for (int i = 0; i < 4; i++) // ì¸ì›ìˆ˜ ì…ë ¥
 	{
 		for (int j = 0; j < 3; j++)
 		{
-			printf("%dÃş %dÈ£¿¡ »ì°íÀÖ´Â ÀÎ¿ø¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ", i + 1, j + 1);
+			printf("%dì¸µ %dí˜¸ì— ì‚´ê³ ìˆëŠ” ì¸ì›ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ", i + 1, j + 1);
 			scanf_s("%d", &floor[i][j]);
 		}
 	}
 
-	for (int i = 0; i < 4; i++) // ÀÎ¿ø¼ö Ãâ·Â
+	for (int i = 0; i < 4; i++) // ì¸ì›ìˆ˜ ì¶œë ¥
 	{
 		for (int j = 0; j < 3; j++)
 		{
-			printf("%dÃş %dÈ£¿¡ »ì°íÀÖ´Â ÀÎ¿øÀº %d¸íÀÔ´Ï´Ù.\n", i + 1, j + 1,floor[i][j]);
+			printf("%dì¸µ %dí˜¸ì— ì‚´ê³ ìˆëŠ” ì¸ì›ì€ %dëª…ì…ë‹ˆë‹¤.\n", i + 1, j + 1,floor[i][j]);
 		}
 	}
 	 
-	for (int i = 0; i < 4; i++) // °¢ ÃşÀÇ ÃÑ ÀÎ¿ø¼ö Ãâ·Â
+	for (int i = 0; i < 4; i++) // ê° ì¸µì˜ ì´ ì¸ì›ìˆ˜ ì¶œë ¥
 	{
 		for (int j = 0; j < 3; j++)
 		{
 			floor_people += floor[i][j];
 		}
-		printf("%dÃş¿¡ »ì°íÀÖ´Â ÀÎ¿øÀº %d¸íÀÔ´Ï´Ù\n", i + 1, floor_people);
+		printf("%dì¸µì— ì‚´ê³ ìˆëŠ” ì¸ì›ì€ %dëª…ì…ë‹ˆë‹¤.\n", i + 1, floor_people);
 		floor_people = 0;
 	}
 
-	for (int i = 0; i < 4; i++) // ÀüÃ¼ ÀÎ¿ø¼ö Ãâ·Â
+	for (int i = 0; i < 4; i++) // ì „ì²´ ì¸ì›ìˆ˜ ì¶œë ¥
 	{
 		for (int j = 0; j < 3; j++)
 		{
 			total_people += floor[i][j];
 		}
 	}
-	printf("%¾ÆÆÄÆ®¿¡ »ì°íÀÖ´Â ÀÎ¿øÀº %d¸íÀÔ´Ï´Ù", total_people);
+	printf("ì•„íŒŒíŠ¸ì— ì‚´ê³ ìˆëŠ” ì¸ì›ì€ %dëª…ì…ë‹ˆë‹¤", total_people);
 }
